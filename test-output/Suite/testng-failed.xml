@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.learnautomation.listener.ReportListener"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" parallel="classes">
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="8.1"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="browser_version" value="latest"/>
+    <parameter name="remote" value="true"/>
+    <classes>
+      <class name="com.learnautomation.testcases.LoginWithPOM">
+        <methods>
+          <include name="logout"/>
+          <include name="loginWithAdmin" invocation-numbers="0"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+          <include name="setUP"/>
+        </methods>
+      </class> <!-- com.learnautomation.testcases.LoginWithPOM -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="3" parallel="tests">
+
+   <listeners>
+   	
+   		<listener class-name="com.learnautomation.listener.ReportListener"/>
+   
+   </listeners>
+
+
+  <test thread-count="5" name="TestWin8.1">
+	
+	<parameter name="remote" value="false"/>
+	<parameter name="os" value="Windows"/>
+	<parameter name="os_version" value="8.1"/>
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="browser_version" value="latest"/>
+
+    <classes>
+      <class name="com.learnautomation.testcases.LoginWithPOM"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="5" name="TestWin10">
+	
+	<parameter name="remote" value="true"/>
+	<parameter name="os" value="Windows"/>
+	<parameter name="os_version" value="10"/>
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="browser_version" value="latest"/>
+
+    <classes>
+      <class name="com.learnautomation.testcases.LoginWithPOM"/>
+    </classes>
+  </test> 
+  
+  
+  <test thread-count="5" name="TestWin11">
+	
+	<parameter name="remote" value="true"/>
+	<parameter name="os" value="Windows"/>
+	<parameter name="os_version" value="11"/>
+	<parameter name="browser" value="firefox"/>
+	<parameter name="browser_version" value="latest"/>
+
+    <classes>
+      <class name="com.learnautomation.testcases.LoginWithPOM"/>
+    </classes>
+  </test> 
+   
+</suite> 

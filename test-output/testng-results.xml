@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38375" started-at="2022-01-21T09:10:30 IST" finished-at="2022-01-21T09:11:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38375" started-at="2022-01-21T09:10:30 IST" finished-at="2022-01-21T09:11:08 IST">
+      <class name="com.learnautomation.testcases.CreateUser">
+        <test-method status="PASS" signature="setUP(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="setUP" is-config="true" duration-ms="14624" started-at="2022-01-21T09:10:30 IST" finished-at="2022-01-21T09:10:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="setupDriver" is-config="true" duration-ms="1" started-at="2022-01-21T09:10:47 IST" finished-at="2022-01-21T09:10:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="loginWithAdmin(java.lang.String,java.lang.String)[pri:1, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="loginWithAdmin" duration-ms="7083" started-at="2022-01-21T09:10:47 IST" data-provider="loginDataExcel" finished-at="2022-01-21T09:10:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithAdmin -->
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="setupDriver" is-config="true" duration-ms="5" started-at="2022-01-21T09:10:55 IST" finished-at="2022-01-21T09:10:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="createUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="createUser" duration-ms="10645" started-at="2022-01-21T09:10:55 IST" data-provider="newUserDetails" finished-at="2022-01-21T09:11:05 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jasmine Morgan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pradip_111]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Enabled]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Abcd@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method status="PASS" signature="setupDriver()[pri:0, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="setupDriver" is-config="true" duration-ms="1" started-at="2022-01-21T09:11:05 IST" finished-at="2022-01-21T09:11:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="logout()[pri:3, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="logout" duration-ms="1886" started-at="2022-01-21T09:11:05 IST" depends-on-methods="com.learnautomation.testcases.CreateUser.loginWithAdmin" finished-at="2022-01-21T09:11:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.learnautomation.testcases.CreateUser@1cab0bfb]" name="tearDown" is-config="true" duration-ms="1329" started-at="2022-01-21T09:11:07 IST" finished-at="2022-01-21T09:11:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.learnautomation.testcases.CreateUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
