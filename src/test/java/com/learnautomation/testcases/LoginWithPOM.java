@@ -31,7 +31,7 @@ public class LoginWithPOM extends BaseClass {
 	
 	dash=home.loginToApplication(uname, password);
 	
-	Assert.assertTrue(dash.getCurrentURL().contains("dashboard"),"Login failed");
+	Assert.assertTrue(dash.getCurrentURL().contains("dashboard"),"Login failed please try again");
 	
 	}
 
