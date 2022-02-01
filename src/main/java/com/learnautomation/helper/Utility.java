@@ -39,6 +39,12 @@ import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 public class Utility {
 
 	
+	public void sampleMethod()
+	{
+		
+	}
+	
+	
 	
 	public static void selectFromDropDownUsingText(WebDriver driver,By locator,String valueToBeSelected)
 	{
