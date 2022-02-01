@@ -29,6 +29,13 @@ import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
+
+/*
+ * 			This is common utility for all projects
+ * 		
+ * 
+ */
+
 public class Utility {
 
 	
