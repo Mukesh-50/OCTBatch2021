@@ -73,6 +73,17 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M5</version>
 				<configuration>
+				
+					<systemPropertyVariables>
+						<remote>${remote}</remote>
+						<os>${os}</os>
+						<os_version>${os_version}</os_version>
+						<browser>${browser}</browser>
+						<browser_version>${browser_version}</browser_version>
+						<url>${url}</url>
+					</systemPropertyVariables>
+					
+					
 					<suiteXmlFiles>
 						<suiteXmlFile>${testSuite}</suiteXmlFile>
 					</suiteXmlFiles>

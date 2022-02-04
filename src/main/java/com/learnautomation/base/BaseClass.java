@@ -24,20 +24,20 @@ public class BaseClass {
 		return driver;		
 	}
 	
-	@Parameters({"remote","os","os_version","browser","browser_version"})
+	@Parameters({"remote","os","os_version","browser","browser_version","url"})
 	@BeforeClass
-	public void setUP(@Optional("false")String remote,@Optional("")String os,@Optional("") String os_version,@Optional("")String browser,@Optional("")String browser_version)
+	public void setUP(@Optional("false")String remote,@Optional("")String os,@Optional("") String os_version,@Optional("")String browser,@Optional("")String browser_version,
+			@Optional("")String url)
 	{	
+		BrowserFactory obj;
 		
 		if(remote.equalsIgnoreCase("true"))
 		{
 			System.out.println("LOG:INFO- Test will be executing on cloud");
 			
-			BrowserFactory obj=new BrowserFactory();
+			obj=new BrowserFactory();
 			
 			driver=obj.startBrowser(os, os_version, browser,browser_version);
-			
-			driver.get(ConfigUtility.getProperty("url"));
 			
 			System.out.println("LOG:INFO- Session started on cloud");
 		}
@@ -47,14 +47,11 @@ public class BaseClass {
 			
 			System.out.println("Thread Information "+Thread.currentThread().getId());
 			
-			BrowserFactory obj=new BrowserFactory();
-			
-			driver= obj.startBrowser(ConfigUtility.getProperty("browser"));
-			
-			driver.get(ConfigUtility.getProperty("url"));
-			
+			obj=new BrowserFactory();	
 			System.out.println("LOG:INFO- Browser Started");
 		}
+		driver= obj.startBrowser(browser);
+		driver.get(url);
 			
 	}
 	
