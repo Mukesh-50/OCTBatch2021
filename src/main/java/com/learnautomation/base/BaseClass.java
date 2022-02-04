@@ -5,7 +5,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-import com.learnautomation.dataprovider.ConfigUtility;
+
 import com.learnautomation.factory.BrowserFactory;
 
 /*
@@ -26,8 +26,8 @@ public class BaseClass {
 	
 	@Parameters({"remote","os","os_version","browser","browser_version","url"})
 	@BeforeClass
-	public void setUP(@Optional("false")String remote,@Optional("")String os,@Optional("") String os_version,@Optional("")String browser,@Optional("")String browser_version,
-			@Optional("")String url)
+	public void setUP(@Optional("false")String remote,@Optional("")String os,@Optional("") String os_version,@Optional("chrome")String browser,@Optional("")String browser_version,
+			@Optional("https://opensource-demo.orangehrmlive.com")String url)
 	{	
 		BrowserFactory obj;
 		
@@ -51,8 +51,7 @@ public class BaseClass {
 			System.out.println("LOG:INFO- Browser Started");
 		}
 		driver= obj.startBrowser(browser);
-		driver.get(url);
-			
+		driver.get(url);		
 	}
 	
 	@AfterClass
