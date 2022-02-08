@@ -20,4 +20,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Execute test via github actions
-      run: mvn clean test -DtestSuite=Regression.xml
+      run: mvn clean test -DtestSuite=Regression.xml -Dbrowser=ChromeHeadless -Durl=https://opensource-demo.orangehrmlive.com
