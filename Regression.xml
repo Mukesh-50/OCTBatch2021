@@ -10,11 +10,11 @@
 
   <test thread-count="5" name="TestWin11">
 	
-	<parameter name="remote" value="true"/>
+	<!-- <parameter name="remote" value="true"/>
 	<parameter name="os" value="Windows"/>
 	<parameter name="os_version" value="8.1"/>
 	<parameter name="browser" value="chrome"/>
-	<parameter name="browser_version" value="latest"/>
+	<parameter name="browser_version" value="latest"/> -->
 
     <classes>
       <class name="com.learnautomation.testcases.LoginWithPOM"/>

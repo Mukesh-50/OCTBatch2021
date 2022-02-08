@@ -49,7 +49,7 @@ public class BaseClass {
 			
 			obj=new BrowserFactory();	
 			
-			System.out.println("LOG:INFO- Browser Started");
+			System.out.println("LOG:INFO- Browser Started "+browser);
 			
 			driver= obj.startBrowser(browser);
 		}
