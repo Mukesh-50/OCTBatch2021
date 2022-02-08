@@ -48,9 +48,12 @@ public class BaseClass {
 			System.out.println("Thread Information "+Thread.currentThread().getId());
 			
 			obj=new BrowserFactory();	
+			
 			System.out.println("LOG:INFO- Browser Started");
+			
+			driver= obj.startBrowser(browser);
 		}
-		driver= obj.startBrowser(browser);
+		
 		driver.get(url);		
 	}
 	
