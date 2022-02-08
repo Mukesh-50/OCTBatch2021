@@ -1,6 +1,7 @@
 com\learnautomation\dataprovider\ConfigUtility.class
 com\learnautomation\testing\SeleniumGridExample2.class
 com\learnautomation\testing\SeleniumGridExample4.class
+com\learnautomation\helper\Utility.class
 com\learnautomation\dataprovider\CustomDataProvider.class
 com\learnautomation\pages\DashboardPage.class
 com\learnautomation\base\BaseClass.class
@@ -13,7 +14,5 @@ com\learnautomation\pages\EmpPage.class
 com\learnautomation\factory\BrowserFactory.class
 com\learnautomation\testing\SeleniumGridExample.class
 com\learnautomation\pages\AdminPage.class
-com\learnautomation\testing\ThreadLocalDemo.class
 com\learnautomation\testing\SeleniumGridExample3.class
 com\learnautomation\listener\ExtentManager.class
-com\learnautomation\testing\Student.class

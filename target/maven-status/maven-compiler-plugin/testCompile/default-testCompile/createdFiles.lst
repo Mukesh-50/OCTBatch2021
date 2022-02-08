@@ -1,1 +1,3 @@
-com\learnautomation\testcases\Demo1.class
+com\learnautomation\testcases\CreateUser.class
+com\learnautomation\testcases\LoginWithPOM.class
+com\learnautomation\testcases\MultipleLoginWithPOM.class

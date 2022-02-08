@@ -24,12 +24,18 @@ public class BaseClass {
 		return driver;		
 	}
 	
-	@Parameters({"remote","os","os_version","browser","browser_version","url"})
 	@BeforeClass
+	@Parameters({"remote","os","os_version","browser","browser_version","url"})
 	public void setUP(@Optional("false")String remote,@Optional("")String os,@Optional("") String os_version,@Optional("chrome")String browser,@Optional("")String browser_version,
 			@Optional("https://opensource-demo.orangehrmlive.com")String url)
 	{	
 		BrowserFactory obj;
+		
+		System.out.println("Remote value is "+remote);
+		
+		System.out.println("Browser value is "+browser);
+		
+		System.out.println("URL value is "+url);
 		
 		if(remote.equalsIgnoreCase("true"))
 		{
@@ -48,6 +54,10 @@ public class BaseClass {
 			System.out.println("Thread Information "+Thread.currentThread().getId());
 			
 			obj=new BrowserFactory();	
+			
+			System.out.println("Browser value is "+browser);
+			
+			System.out.println("URL value is "+url);
 			
 			System.out.println("LOG:INFO- Browser Started "+browser);
 			
